@@ -232,3 +232,13 @@ Anns accepted/rejected by each pool, these numbers are based on the previous 10 
 Goodrate = number of anns accepted divided by number of anns produced.
 
 
+# Building Windows using Ubuntu 18
+sudo apt-get update
+sudo apt-get install gcc git make mingw-w64 mingw-w64-tools mingw-w64-x86-64-dev
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup target add x86_64-pc-windows-gnu
+git clone https://github.com/cjdelisle/packetcrypt_rs --branch develop
+cd packetcrypt_rs
+~/.cargo/bin/cargo build --release --target x86_64-pc-windows-gnu
+
+
