@@ -232,7 +232,7 @@ Anns accepted/rejected by each pool, these numbers are based on the previous 10 
 Goodrate = number of anns accepted divided by number of anns produced.
 
 
-# Building for Unix 64bit
+# Building for Windows using Ubuntu 18
 sudo apt-get update
 sudo apt-get install gcc git make mingw-w64 mingw-w64-tools mingw-w64-x86-64-dev
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
